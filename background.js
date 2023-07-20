@@ -1,30 +1,13 @@
-// Copyright 2022 Google LLC
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//     https://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 chrome.runtime.onInstalled.addListener(() => {
   chrome.action.setBadgeText({
-    text: 'OFF'
+    text: 'ON'
   });
 });
 
-const profile = 'https://www.faceit.com/de/players/';
-const game = 'https://www.faceit.com/de/csgo/room/';
-const playerModal = 'https://www.faceit.com/de/players-modal/';
 
 // When the user clicks on the extension action
 chrome.action.onClicked.addListener(async (tab) => {
-  if (tab.url.startsWith(profile) || tab.url.startsWith(game) || tab.url.startsWith(playerModal)) {
+  if (tab.url.startsWith('https://www.faceit.com/')) {
     // We retrieve the action badge to check if the extension is 'ON' or 'OFF'
     const prevState = await chrome.action.getBadgeText({ tabId: tab.id });
     // Next state will always be the opposite
