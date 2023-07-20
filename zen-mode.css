@@ -1,0 +1,47 @@
+/* hide ranking badges */
+.cqhHC,
+.stat__icon,
+.esCHGs {
+  display: none;
+}
+
+/* hide recent game stats (win or loss) */
+.stat__detail__value .text-danger,
+.dGBjBy,
+.cTxygu,
+.bgwgMi,
+.jQFrNB {
+  display: none;
+}
+
+/* hide map stats */ 
+.clCtMb {
+  display: none;
+}
+
+/* hide popup stats from other players in lobby */ 
+.eHhmuA {
+  display: none;
+}
+
+/* hide game winning changes indicator */ 
+.bAzblz {
+  display: none;
+}
+
+/* hide other stats */
+.bkCvpL,
+.bJkmXR,
+.hevVle {
+  display: none;
+}
+
+/* hide team and public chat */
+.cPvIqq {
+  display: none;
+}
+
+/* hide demo button (no more missclicks) */
+.jvCfXS {
+  display: none;
+}
