@@ -22,6 +22,7 @@ table.sc-czIVBR td:nth-child(3), table.sc-czIVBR th:nth-child(3) {
 .sc-kpAbQd,/* lobby team balance */
 .sc-TOgAA, /* lobby lvl indicatort */
 .sc-kfiyaB, /* user popup */
+.sc-bInfap, /* lobby team balance */
 .sc-xchvD /* replay button */ {
   display: none !important;
 }
